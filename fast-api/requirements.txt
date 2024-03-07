@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+fastapi-cors
+psycopg2
+pandas

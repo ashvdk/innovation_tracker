@@ -1,0 +1,35 @@
+# Ignore virtual environments
+fast-api/myenv/
+react/myenv/
+
+# Ignore Node.js modules
+fast-api/node_modules/
+react/node_modules/
+
+# Ignore compiled Python files
+fast-api/*.pyc
+
+# Ignore log files
+fast-api/*.log
+
+# Ignore environment-specific files
+fast-api/.env
+react/.env
+
+# Ignore IDE configuration files
+fast-api/.vscode/
+fast-api/.idea/
+fast-api/*.iml
+fast-api/*.idea
+react/.vscode/
+react/.idea/
+react/*.iml
+react/*.idea
+
+# Ignore any other build output or temporary files
+fast-api/build/
+fast-api/dist/
+fast-api/out/
+react/build/
+react/dist/
+react/out/
