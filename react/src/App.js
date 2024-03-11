@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import User from './screens/User/User';
-import { Drawer, FloatButton, Select, Space, Tabs } from 'antd';
+// import { Drawer, FloatButton, Select, Space, Tabs } from 'antd';
 import Dashboard from './screens/Dashboard/Dashboard';
 import Orders from './screens/Orders/Orders';
 import { useState } from 'react';
@@ -9,6 +9,8 @@ import Filter from './components/Filter/Filter';
 import PlaceOrders from './screens/PlaceOrders/PlaceOrders';
 import axios from 'axios';
 import { url } from './url';
+import { Drawer, FloatButton, Tabs } from 'antd';
+import Company from './screens/Overview/Company';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -55,6 +57,11 @@ function App() {
       key: '3',
       label: 'Place Orders',
       children: <PlaceOrders />,
+    },
+    {
+      key: '4',
+      label: 'Company',
+      children: <Company />,
     }
   ];
   
@@ -62,10 +69,10 @@ function App() {
     <div>
       <div>Hi</div>
       <Tabs defaultActiveKey={tabKey} items={items} onChange={onChange} />;
-      <FloatButton onClick={showDrawer} />
+      {/* <FloatButton onClick={showDrawer} />
       <Drawer title="Filter" placement="right" onClose={onClose} open={open}>
         <Filter tabKey={tabKey} callTheFilters={tabKey == 1 ? getDashboardDetails : () => console.log("Call for orders")}/>
-      </Drawer>
+      </Drawer> */}
     </div>
   );
 }

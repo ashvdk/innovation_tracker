@@ -5,4 +5,8 @@ export const url = {
     filters: `${defaultUrl}/filters`,
     details: `${defaultUrl}/orders/create/details`,
     create_order: `${defaultUrl}/orders/create`,
+    companyOverview: {
+        main: `${defaultUrl}/overview/company`,
+        filters: `${defaultUrl}/overview/company/filters`,
+    }
 }
